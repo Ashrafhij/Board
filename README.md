@@ -1,43 +1,19 @@
 <div dir="rtl" lang="he">
 
-# לוח מודעות דו ממדי
+# Two-dimensional bulletin board
 
-כתבו מחלקה לניהול לוח מחלקות דו ממדי, בהתאם להוראות בחלק א.
 
-בשלב ב עליכם לכתוב מימוש מלא. המימוש צריך לעבור את כל הבדיקות (60% מהציון):
+In the neighborhood bulletin board, people paste ads on top of each other.
+We'll write a bulletin board management class project.
+it supports the following functions:
 
-<div dir='ltr'>
+* `post` - Gets a position (row and column), direction (horizontal or vertical), and a string representing an ad,
+And stick the string on the board in the appropriate place.
+* `read` - Gets position (row and column), direction (horizontal or vertical), and number of characters, reads what is written on the board at the given position and length, and returns a string. The letter in each box on the board is the last letter pasted there.
+* `show` - Displays the current bulletin board for easy reading, in any format of your choice.
+Details:
+* The row and column numbers and the number of characters are unsigned int numbers.
+* The top row is 0 and the left column is 0.
+* In each slot on which nothing is pasted, there is an underline
+* The board size is not limited in advance, but it can be assumed that all ads will be concentrated in the same area - the distances between ads will not be very large.
 
-    make test
-    ./test
-
-</div>
-
-בנוסף, הקוד צריך לעבור בהצלחה את מבחן הקריאות (20% מהציון):
-
-<div dir='ltr'>
-
-    make tidy
-
-</div>
-
-ואת מבחן הזיכרון (20% מהציון):
-
-<div dir='ltr'>
-
-    make valgrind
-
-</div>
-
-בנוסף, יש לכתוב **תוכנית ראשית** כלשהי המדגימה את הפתרון שלכם.
-תוכן התוכנית לבחירתכם - תהיו יצירתיים. התוכנית לא תיבדק אוטומטית אלא רק בהצגה.
-
-כשהגעתם למצב ששתי הפקודות רצות בלי שגיאות, תוכלו לבדוק את הציון שלכם ע"י הפקודה:
-
-<div dir='ltr'>
-
-    bash grade
-
-</div>
-
-</div>
